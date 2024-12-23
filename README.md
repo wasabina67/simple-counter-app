@@ -1,4 +1,5 @@
 # simple-counter-app
+Simple counter app
 
 ## Project setup
 ```
