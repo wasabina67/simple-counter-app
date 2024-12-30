@@ -18,10 +18,10 @@ export default {
   },
   methods: {
     down() {
-      this.counter--;
+      if (this.counter > 0) this.counter--;
     },
     up() {
-      this.counter++;
+      if (this.counter < 99) this.counter++;
     },
   }
 }
