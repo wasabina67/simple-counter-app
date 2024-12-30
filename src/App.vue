@@ -1,8 +1,8 @@
 <template>
   <div>
-    <button @click="down" class="counter-button">-</button>
+    <button @click="down" class="counter-button" :disabled="counter === 0">-</button>
     <span class="counter-display">{{ counter }}</span>
-    <button @click="up" class="counter-button">+</button>
+    <button @click="up" class="counter-button" :disabled="counter === 99">+</button>
   </div>
 </template>
 
