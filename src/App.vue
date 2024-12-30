@@ -1,11 +1,28 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
+  <div>
+    <button @click="down" class="counter-button">-</button>
+    <span class="counter-display">{{ counter }}</span>
+    <button @click="up" class="counter-button">+</button>
+  </div>
 </template>
 
 <script>
 export default {
   name: 'App',
   components: {
+  },
+  data() {
+    return {
+      counter: 0,
+    }
+  },
+  methods: {
+    down() {
+      this.counter--;
+    },
+    up() {
+      this.counter++;
+    },
   }
 }
 </script>
