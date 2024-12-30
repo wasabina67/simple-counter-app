@@ -17,11 +17,11 @@ export default {
     }
   },
   methods: {
-    down() {
-      if (this.counter > 0) this.counter--;
-    },
     up() {
       if (this.counter < 99) this.counter++;
+    },
+    down() {
+      if (this.counter > 0) this.counter--;
     },
   }
 }
